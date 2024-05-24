@@ -2,17 +2,18 @@
  * @param {number} num
  * @return {number}
  */
-var addDigits = function (num) {
-    str = num.toString()
-    let n
-    while (true) {
-        n = 0
-        for (let i = 0; i < str.length; i++) {
-            n += Number(str[i])
+var addDigits = function(num) {
+    if(String(num).length === 1) return num
+    let number = String(num)
+    let sum = 0
+    while(number.length >=2){
+        for(let i = 0; i<number.length;i++){
+            sum += Number(number[i])
+            console.log('sum is =',sum);
         }
-        if (n <= 9) {
-            return n
-        }
-        str = n.toString()
+
+        number = String(sum)
+        sum = 0
     }
-};
+    return Number(number)
+};  
