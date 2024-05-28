@@ -8,7 +8,6 @@ var isPalindrome = function (x) {
         // Negative numbers are not palindromes
         return false;
     }
-
     const originalString = String(x);
     const reversedString = originalString.split('').reverse().join('');
 
