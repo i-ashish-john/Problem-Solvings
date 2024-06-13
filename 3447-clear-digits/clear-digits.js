@@ -3,13 +3,13 @@
  * @return {string}
  */
 var clearDigits = function(s) {
-    result = []
+    vall = []
     for(i=0;i<s.length;i++) {
         if(!isNaN(s[i])) {
-            result.pop()
+            vall.pop()
         } else {
-            result.push(s[i])
+            vall.push(s[i])
         }
     }
-    return result.join('')
+    return vall.join('')
 };
