@@ -4,23 +4,23 @@
  * @return {number}
  */
 var passThePillow = function(n, time) {
-    let temp=0
-    s=1
+    let temp=0;
+    set=1
  for(let i=1;i<=time;i++){
        if(temp===0){
-        s++
+        set++
        }else{
-        s--
+        set--
        }
 
 
-    if(s==n){
+    if(set==n){
         temp=1
        }
-    if(s==1){
+    if(set==1){
         temp=0
        }
      }
 
-return s
+return set
  };
