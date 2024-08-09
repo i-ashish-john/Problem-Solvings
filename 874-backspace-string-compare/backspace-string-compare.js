@@ -17,6 +17,6 @@ const backspaceString = (string) => {
     return output.join('');
 }
 
-var backspaceCompare = function(s, t) {
+let backspaceCompare = function(s, t) {
     return backspaceString(s) === backspaceString(t);
 };
