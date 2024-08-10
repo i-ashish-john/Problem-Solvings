@@ -5,7 +5,7 @@
  */
 var isIsomorphic = function(s, t){
 
-    // if (s.length !== t.length){
+    // if (s.length !== t.length){. if need
     //     return false;
     // }
     let Object1 = {}
