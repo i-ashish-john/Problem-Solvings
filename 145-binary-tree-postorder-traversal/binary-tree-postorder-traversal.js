@@ -11,15 +11,20 @@
  * @return {number[]}
  */
 var postorderTraversal = function(root) {
-    let res =[]
-     
-    function postorder(node){
-        if(!node)
-         return [];
-        postorder(node.left)
-        postorder(node.right)
-        res.push(node.val)
+    //create a array to store the values
+    let  arr = []
+
+    function postOrderTraversal(root,arr){
+        //if the root is empty  after somany recurtion calls we return arr
+         if(!root){
+        return arr
     }
-    postorder(root)
-    return res 
+    //after that we call the left and right arr values
+    postOrderTraversal(root.left,arr)
+    postOrderTraversal(root.right,arr)
+    arr.push(root.val)
+
+    }
+   postOrderTraversal(root,arr)
+    return arr
 };
