@@ -22,4 +22,4 @@ var subarraySum = function(nums, k) {
         }
     }
     return counter;
-};
+};//but looking solution
