@@ -9,12 +9,6 @@ var missingNumber = function(nums){
              return i
         }
     }
-    // for(let i = 0;i<longest;i++){
-    //     for(let j = 0;j<=nums.length-1;j++){
-    //         if( nums[i].includes(nums[j]) ){
-    //              return i
-    //         }
-    //     }
-    // }
+   
 
 };
