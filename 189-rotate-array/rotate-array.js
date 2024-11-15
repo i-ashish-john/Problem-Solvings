@@ -11,3 +11,8 @@ var rotate = function(nums, k) {
 	nums[(i+k)%n] = numsCopy[i]
     }    
 };
+// var rotate = function(nums, k) {
+//     for (let i = 0; i < k; i++) {
+//         nums.unshift(nums.pop());
+//     }
+// };
