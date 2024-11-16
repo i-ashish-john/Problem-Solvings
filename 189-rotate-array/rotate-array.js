@@ -9,7 +9,9 @@ var rotate = function(nums, k) {
     console.log(numsCopy)
     for (let i = 0; i < n; i++) {
 	nums[(i+k)%n] = numsCopy[i]
-    }    
+    }
+    console.log(`nums=${nums}`)    
+    console.log(`numsCopy=${numsCopy}`)
 };
 // var rotate = function(nums, k) {
 //     for (let i = 0; i < k; i++) {
