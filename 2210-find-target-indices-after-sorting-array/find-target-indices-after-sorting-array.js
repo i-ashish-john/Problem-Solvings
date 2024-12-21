@@ -5,11 +5,20 @@
  */
 var targetIndices = function(nums, target) {
     nums.sort((a,b)=>a-b)
-    let result =[]
+    // console.log(nums)
+    let val = []
     for(let i =0;i<nums.length;i++){
-        if(nums[i] == target){
-            result.push(i)
+        if(nums[i] === target){
+             val.push(i)
         }
+        
     }
-    return result
+    
+    return val
 };
+
+
+
+
+
+
